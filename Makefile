@@ -19,15 +19,15 @@
 
 
 # ADJUST COMPILER PATH TO OPENBABEL INCLUDE FILES (1st line Linux, 2nd line Windows):
-INCLUDE_OB  =  -I/usr/local/include/openbabel-2.0  
-INCLUDE_OB  =  -I/usr/local/include/openbabel-2.0  
+INCLUDE_OB  =  -I/usr/include/openbabel-2.0  
+INCLUDE_OB  =  -I/usr/include/openbabel-2.0  
 # ADJUST COMPILER PATH TO GSL INCLUDE FILES (1st line Linux, 2nd line Windows):
 INCLUDE_GSL  =   
 INCLUDE_GSL  =   
 
 # ADJUST LINKER PATH TO OPENBABEL LIBRARY FILES (1st line Linux, 2nd line Windows):
-LDFLAGS_OB  =  -L/usr/local/lib  
-LDFLAGS_OB  =  -L/usr/local/lib  
+LDFLAGS_OB  =   
+LDFLAGS_OB  =   
 # ADJUST LINKER PATH TO GSL LIBRARY FILES (1st line Linux, 2nd line Windows):
 LDFLAGS_GSL  =   
 LDFLAGS_GSL  =   
@@ -46,7 +46,7 @@ NAME          = fminer
 CC            = g++
 INCLUDE       = $(INCLUDE_OB) $(INCLUDE_GSL) 
 LDFLAGS       = $(LDFLAGS_OB) $(LDFLAGS_GSL)
-OBJ           = closeleg.o constraints.o database.o graphstate.o legoccurrence.o path.o patterntree.o fminer.o
+OBJ           = closeleg.o constraints.o database.o graphstate.o legoccurrence.o path.o patterntree.o last.o
 SWIG          = swig
 SWIGFLAGS     = -c++ -ruby
 ifeq ($(OS), Windows_NT) # assume MinGW/Windows

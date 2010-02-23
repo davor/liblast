@@ -18,7 +18,7 @@
     along with LibFminer.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "fminer.h"
+#include "last.h"
 #include "globals.h"
 
 
